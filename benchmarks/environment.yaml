@@ -1,0 +1,10 @@
+name: neodisambiguate_benchmarks
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - bwa
+  - dwgsim
+  - parallel
+  - picard
