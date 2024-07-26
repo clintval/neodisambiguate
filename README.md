@@ -37,12 +37,12 @@ Although paired-end reads will give the most discriminatory power for disambigua
 - Will disambiguate an arbitrary number of BAMs, all aligned to different references
 - Writes the ambiguous alignments to a separate directory
 - Extensible implementation which supports alternative disambiguation strategies
-- Benchmarks show high accuracy: [Click Here](benchmarks/disambiguate.md)
+- Benchmarks show high accuracy: [Click Here](benchmarks/README.md)
 
 ### Command Line Usage
 
 ```bash
-❯ neodisambiguate -i infile1.bam infile2.bam -p out/disambiguated
+❯ neodisambiguate -i infile1.bam infile2.bam -o out/disambiguated
 ```
 
 ### Example Usage
@@ -50,7 +50,7 @@ Although paired-end reads will give the most discriminatory power for disambigua
 To disambiguate templates for sample `dna00001` that are aligned to human (A) and mouse (B):
 
 ```bash
-❯ neodisambiguate -i dna00001.A.bam dna00001.B.bam -p out/dna00001 -n hg38 mm10
+❯ neodisambiguate -i dna00001.A.bam dna00001.B.bam -o out/dna00001 -n hg38 mm10
 ```
 
 ```console

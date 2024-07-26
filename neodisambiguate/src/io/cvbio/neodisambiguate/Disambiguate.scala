@@ -120,7 +120,7 @@ object Disambiguate {
          |To disambiguate a sample aligned to human (A) and mouse (B):
          |
          |```
-         |❯ neodisambiguate -i dna00001.A.bam dna00001.B.bam -p out/dna00001 -n hg38 mm10
+         |❯ neodisambiguate -i dna00001.A.bam dna00001.B.bam -o out/dna00001 -n hg38 mm10
          |
          |❯ tree out/
          |  out/
