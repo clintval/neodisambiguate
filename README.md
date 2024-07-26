@@ -2,7 +2,7 @@
 
 <!-- [![Install with bioconda](https://img.shields.io/badge/Install%20with-bioconda-brightgreen.svg)](http://bioconda.github.io/recipes/neodisambiguate/README.html) -->
 <!-- [![Anaconda Version](https://anaconda.org/bioconda/neodisambiguate/badges/version.svg)](http://bioconda.github.io/recipes/neodisambiguate/README.html) -->
-[![Unit Tests](https://github.com/clintval/neodisambiguate/actions/workflows/unit-tests.yml/badge.svg?branch=main)](https://github.com/clintval/neodisambiguate/actions/workflows/unit-tests.yml)
+[![Unit Tests](https://github.com/clintval/neodisambiguate/actions/workflows/unit-tests.yml/badge.svg?branch=main)](https://github.com/clintval/neodisambiguate/actions/workflows/unit-tests.yml?query=branch%3Amain)
 [![Java Version](https://img.shields.io/badge/java-8,11,17,21-c22d40.svg)](https://github.com/AdoptOpenJDK/homebrew-openjdk)
 [![Language](https://img.shields.io/badge/language-scala-c22d40.svg)](https://www.scala-lang.org/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/clintval/neodisambiguate/blob/master/LICENSE)
