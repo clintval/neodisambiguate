@@ -87,7 +87,7 @@ object Disambiguate {
   }
 
   /** Command line configuration. */
-  private class NeodisambiguateConf(args: Seq[String]) extends ScallopConf(args) {
+  private[neodisambiguate] class NeodisambiguateConf(args: Seq[String]) extends ScallopConf(args) {
     private val packageName: String = Option(this.getClass.getPackage.getImplementationTitle).getOrElse("neodisambiguate")
     private val version: String     = Option(this.getClass.getPackage.getImplementationVersion).getOrElse("UNKNOWN")
     version(s"$packageName $version\n")

@@ -36,7 +36,7 @@ object MetricPair {
 
   /** Build a [[MetricPair]] from a [[Template]]. A function is required to reduce the tag values to one canonical value. */
   def apply[T](template: Template, tag: SAMTag)(fn: (T, T) => T)(implicit cmp: Ordering[T]): MetricPair[T] = {
-    apply(template = template, tag = tag.toString)(fn = fn)
+    apply(template = template, tag = tag.toString)(fn = fn)(cmp = cmp)
   }
 
   /** Build an empty [[MetricPair]]. */
