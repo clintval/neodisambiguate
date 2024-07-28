@@ -33,5 +33,5 @@ jobs:
       - name: Create Code Coverage Report
         if: matrix.java-version == '11'
         run: |
-          ./mill --no-server --disable-ticker ${{ matrix.suite }}.scoverage.xmlReport
+          ./mill --no-server --disable-ticker ${{ matrix.suite }}.scoverage.htmllsReport
       # TODO: build an HTML report and upload as an artifact

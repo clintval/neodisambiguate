@@ -13,16 +13,6 @@ object MathUtil {
     def countMinBy[B](fn: A => B)(implicit cmp: Ordering[B]): Int = MathUtil.countMin(self.map(fn))
   }
 
-  /** Implicits for optionally finding the maximum and minimum items in a collection. */
-  implicit class WithMaxMinOption[A](self: IterableOnce[A]) {
-
-    /** Optionally return the maximum item from a container. */
-    def maxOption(implicit cmp: Ordering[A]): Option[A] = if (self.iterator.isEmpty) None else Some(self.iterator.max)
-
-    /** Optionally return the minimum item from a container. */
-    def minOption(implicit cmp: Ordering[A]): Option[A] = if (self.iterator.isEmpty) None else Some(self.iterator.min)
-  }
-
   /** Implicits picking the single maximum or single minimum item in a collection. */
   implicit class WithPickMaxMinBy[A](self: Seq[A]) {
 
