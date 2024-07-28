@@ -27,10 +27,12 @@ object TemplateOrdering extends FgBioEnum[TemplateOrdering] {
     * If neither template is clearly better, then the templates are equivalent.
     */
   case object ClassicOrdering extends TemplateOrdering {
+    // $COVERAGE-OFF$
     private def bestAlignmentScore(template: Template): MetricPair[Int]  = MetricPair[Int](template, AS)(_ max _)
     private def worstAlignmentScore(template: Template): MetricPair[Int] = MetricPair[Int](template, AS)(_ min _)
     private def bestNumMismatches(template: Template): MetricPair[Int]   = MetricPair[Int](template, NM)(_ min _)
     private def worstNumMismatches(template: Template): MetricPair[Int]  = MetricPair[Int](template, NM)(_ max _)
+    // $COVERAGE-ON$
 
     /** Compare two templates using the original published algorithm. */
     override def compare(x: Template, y: Template): Int = {

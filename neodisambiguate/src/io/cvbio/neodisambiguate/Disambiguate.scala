@@ -168,10 +168,12 @@ object Disambiguate {
     IOUtil.setCompressionLevel(conf.compression())
     Io.compressionLevel = conf.compression()
 
+    // $COVERAGE-OFF$
     if (IntelCompressionLibrarySupported) {
       BlockCompressedOutputStream.setDefaultDeflaterFactory(new IntelDeflaterFactory)
       BlockGunzipper.setDefaultInflaterFactory(new IntelInflaterFactory)
     }
+    // $COVERAGE-ON$
 
     Io.tmpDir = conf.tmpDir()
     System.setProperty("java.io.tmpdir", conf.tmpDir().toAbsolutePath.toString)
