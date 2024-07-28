@@ -33,6 +33,12 @@ class BamsTest extends UnitSpec {
     iterator.hasNext shouldBe false
   }
 
+  it should "raise an exception when empty and next() is called" in {
+    val builder  = new SamBuilder(sort = Some(SamOrder.Queryname))
+    val iterator = Bams.templatesIterator(builder.toSource)
+    an[NoSuchElementException] shouldBe thrownBy { iterator.next() }
+  }
+
   it should "accept a single valid SamSource with more than zero alignments" in {
     val builder  = new SamBuilder(sort = Some(SamOrder.Queryname))
     builder.addPair(name = "pair1", start1 = 1, start2 = 2)

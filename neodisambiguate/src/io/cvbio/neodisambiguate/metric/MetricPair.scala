@@ -1,6 +1,7 @@
 package io.cvbio.neodisambiguate.metric
 
 import com.fulcrumgenomics.bam.Template
+import htsjdk.samtools.SAMTag
 import io.cvbio.neodisambiguate.CommonsDef.SamTag
 import io.cvbio.neodisambiguate.bam.Bams.ReadOrdinal.{Read1, Read2}
 import io.cvbio.neodisambiguate.bam.Bams.TemplateUtil
@@ -31,6 +32,11 @@ object MetricPair {
       read1 = template.tagValues[T](Read1, tag).flatten.reduceOption(fn(_, _)),
       read2 = template.tagValues[T](Read2, tag).flatten.reduceOption(fn(_, _))
     )
+  }
+
+  /** Build a [[MetricPair]] from a [[Template]]. A function is required to reduce the tag values to one canonical value. */
+  def apply[T](template: Template, tag: SAMTag)(fn: (T, T) => T)(implicit cmp: Ordering[T]): MetricPair[T] = {
+    apply(template = template, tag = tag.toString)(fn = fn)(cmp = cmp)
   }
 
   /** Build an empty [[MetricPair]]. */

@@ -64,7 +64,6 @@ object Bams {
 
       /** Advance to the next sequence of templates. */
       override def next(): Seq[Template] = {
-        require(hasNext, "next() called on empty iterator")
         val templates = iterators.map(_.next())
         require(
           templates.map(_.name).distinct.length <= 1,
