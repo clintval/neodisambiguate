@@ -6,13 +6,12 @@ import com.fulcrumgenomics.bam.Template
 import com.fulcrumgenomics.bam.api.SamSource
 import com.fulcrumgenomics.commons.CommonsDef.SafelyClosable
 import com.fulcrumgenomics.commons.collection.SelfClosingIterator
-import com.fulcrumgenomics.commons.util.LazyLogging
 import enumeratum.EnumEntry
 import io.cvbio.neodisambiguate.CommonsDef.SamTag
 import io.cvbio.neodisambiguate.bam.Bams.ReadOrdinal.{Read1, Read2}
 
 /** Common methods for working with SAM/BAM files. */
-object Bams extends LazyLogging {
+object Bams {
 
   /** Implicit class that makes working with a [[Template]] easier. */
   implicit class TemplateUtil(private val template: Template) {
