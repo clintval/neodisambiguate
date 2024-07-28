@@ -27,14 +27,13 @@ object TemplateOrdering extends FgBioEnum[TemplateOrdering] {
     * If neither template is clearly better, then the templates are equivalent.
     */
   case object ClassicOrdering extends TemplateOrdering {
+    private def bestAlignmentScore(template: Template): MetricPair[Int]  = MetricPair[Int](template, AS)(_ max _)
+    private def worstAlignmentScore(template: Template): MetricPair[Int] = MetricPair[Int](template, AS)(_ min _)
+    private def bestNumMismatches(template: Template): MetricPair[Int]   = MetricPair[Int](template, NM)(_ min _)
+    private def worstNumMismatches(template: Template): MetricPair[Int]  = MetricPair[Int](template, NM)(_ max _)
 
     /** Compare two templates using the original published algorithm. */
     override def compare(x: Template, y: Template): Int = {
-      val bestAlignmentScore  = (template: Template) => MetricPair[Int](template, AS)(_ max _)
-      val worstAlignmentScore = (template: Template) => MetricPair[Int](template, AS)(_ min _)
-      val bestNumMismatches   = (template: Template) => MetricPair[Int](template, NM)(_ min _)
-      val worstNumMismatches  = (template: Template) => MetricPair[Int](template, NM)(_ max _)
-
       var compare = bestAlignmentScore(x).compare(bestAlignmentScore(y))
       if (compare == 0) worstAlignmentScore(x).compare(worstAlignmentScore(y))
       if (compare == 0) compare = -bestNumMismatches(x).compare(bestNumMismatches(y))   // Negate because less is better.
