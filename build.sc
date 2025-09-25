@@ -56,8 +56,8 @@ object neodisambiguate extends ScalaModule with PublishModule with ScoverageModu
   }
 
   override def ivyDeps = Agg(
-    ivy"com.fulcrumgenomics::commons::1.4.0",
-    ivy"com.fulcrumgenomics::fgbio::2.3.0".excludeOrg(htsjdkAndPicardExcludes: _*),
+    ivy"com.fulcrumgenomics::commons::1.6.0",
+    ivy"com.fulcrumgenomics::fgbio::3.0.0".excludeOrg(htsjdkAndPicardExcludes: _*),
     ivy"org.rogach::scallop::5.1.0",
     ivy"org.slf4j:slf4j-nop:1.7.6", // For peace and quiet: https://www.slf4j.org/codes.html#StaticLoggerBinder
   )
