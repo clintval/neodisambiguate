@@ -107,7 +107,7 @@ object Disambiguate {
          |reference assignment are written to an ambiguous input-specific output BAM
          |file.
          |
-         |Only BAMs produced from the Burrows-Wheeler Aligner (bwa) or STAR are currently
+         |Only BAMs produced from bwa, bwa-mem2, minimap2, or STAR are known to be
          |supported. Input BAMs of arbitrary sort order are accepted, however, an
          |internal sort to queryname will be performed unless the BAM is already in
          |queryname sort order. All output BAM files will be written in the same sort

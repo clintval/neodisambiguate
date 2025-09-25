@@ -26,7 +26,7 @@ Disambiguation of aligned reads is made per-template and information across prim
 All templates which are positively assigned to a single source reference are written to a reference-specific output BAM file.
 Any templates with ambiguous reference assignment are written to an ambiguous input-specific output BAM file.
 
-Only BAMs produced from the Burrows-Wheeler Aligner (bwa) or STAR are currently supported.
+Only BAMs produced from bwa, bwa-mem2, minimap2, or STAR are known to be supported.
 Input BAMs of arbitrary sort order are accepted, however, an internal sort to queryname will be performed unless the BAM is already in queryname sort order.
 All output BAM files will be written in the same sort order as the input BAM files.
 Although paired-end reads will give the most discriminatory power for disambiguation of short-read sequencing data, this tool accepts paired, single-end (fragment), and mixed pairing input data.
