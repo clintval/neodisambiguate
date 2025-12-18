@@ -11,7 +11,7 @@ import os._
 import java.util.jar.Attributes.Name.{IMPLEMENTATION_VERSION => ImplementationVersion}
 
 /** The official package version. */
-private val packageVersion = "1.1.0"
+private val packageVersion = "1.1.1"
 
 /** All the packages we will exclude that come bundled with HTSJDK and Picard. */
 private val htsjdkAndPicardExcludes = Seq("org.apache.ant", "gov.nih.nlm.ncbi", "org.testng", "com.google.cloud.genomics")
