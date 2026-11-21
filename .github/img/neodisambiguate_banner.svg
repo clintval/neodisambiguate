@@ -1,0 +1,80 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="neodisambiguate: three templates of sample dna00001 are aligned to both hg38 and mm10; the first scores AS:i:145 NM:i:1 on hg38 against AS:i:120 NM:i:6 on mm10 and goes to dna00001.hg38.bam, the second ties at AS:i:150 NM:i:0 and goes to ambiguous-alignments, and the third wins on mm10 and goes to dna00001.mm10.bam">
+<defs>
+<pattern id="hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#75908c" stroke-width="1.1"/></pattern>
+</defs>
+<rect width="1200" height="300" fill="#dcebfa"/>
+<rect x="639" y="63" width="270" height="200" rx="6" fill="url(#hatch)"/>
+<rect x="632" y="54" width="270" height="200" rx="6" fill="#f4f8fc"/>
+<rect x="632" y="54" width="270" height="200" rx="6" fill="none" stroke="#26443a" stroke-width="2.4"/>
+<text x="646" y="74" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="12.5" fill="#4c6d63">template 1</text>
+<text x="888" y="74" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="12.5" fill="#4c6d63" text-anchor="end">hg38 wins</text>
+<text x="646" y="91" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">hg38</text>
+<rect x="684" y="83" width="34" height="8" rx="3" fill="#4f7a6a" stroke="#26443a" stroke-width="1.1"/>
+<rect x="726" y="83" width="34" height="8" rx="3" fill="#4f7a6a" stroke="#26443a" stroke-width="1.1"/>
+<line x1="705" y1="84.5" x2="705" y2="89.5" stroke="#26443a" stroke-width="1.5" stroke-linecap="round"/>
+<text x="772" y="91" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">AS:i:145 NM:i:1</text>
+<text x="646" y="107" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">mm10</text>
+<rect x="684" y="99" width="34" height="8" rx="3" fill="#dcebfa" stroke="#75908c" stroke-width="1"/>
+<rect x="726" y="99" width="34" height="8" rx="3" fill="#dcebfa" stroke="#75908c" stroke-width="1"/>
+<line x1="705" y1="100.5" x2="705" y2="105.5" stroke="#4c6d63" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="737" y1="100.5" x2="737" y2="105.5" stroke="#4c6d63" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="693" y1="100.5" x2="693" y2="105.5" stroke="#4c6d63" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="751" y1="100.5" x2="751" y2="105.5" stroke="#4c6d63" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="713" y1="100.5" x2="713" y2="105.5" stroke="#4c6d63" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="730" y1="100.5" x2="730" y2="105.5" stroke="#4c6d63" stroke-width="1.5" stroke-linecap="round"/>
+<text x="772" y="107" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#4c6d63">AS:i:120 NM:i:6</text>
+<line x1="644" y1="123" x2="890" y2="123" stroke="#75908c" stroke-width="1" stroke-dasharray="3 4" stroke-linecap="round"/>
+<text x="646" y="138" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="12.5" fill="#4c6d63">template 2</text>
+<text x="888" y="138" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="12.5" fill="#4c6d63" text-anchor="end">a tie</text>
+<text x="646" y="155" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">hg38</text>
+<rect x="684" y="147" width="34" height="8" rx="3" fill="#c9a56a" stroke="#26443a" stroke-width="1.1"/>
+<rect x="726" y="147" width="34" height="8" rx="3" fill="#c9a56a" stroke="#26443a" stroke-width="1.1"/>
+<text x="772" y="155" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">AS:i:150 NM:i:0</text>
+<text x="646" y="171" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">mm10</text>
+<rect x="684" y="163" width="34" height="8" rx="3" fill="#c9a56a" stroke="#26443a" stroke-width="1.1"/>
+<rect x="726" y="163" width="34" height="8" rx="3" fill="#c9a56a" stroke="#26443a" stroke-width="1.1"/>
+<text x="772" y="171" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">AS:i:150 NM:i:0</text>
+<line x1="644" y1="187" x2="890" y2="187" stroke="#75908c" stroke-width="1" stroke-dasharray="3 4" stroke-linecap="round"/>
+<text x="646" y="202" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="12.5" fill="#4c6d63">template 3</text>
+<text x="888" y="202" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="12.5" fill="#4c6d63" text-anchor="end">mm10 wins</text>
+<text x="646" y="219" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">hg38</text>
+<rect x="684" y="211" width="34" height="8" rx="3" fill="#dcebfa" stroke="#75908c" stroke-width="1"/>
+<rect x="726" y="211" width="34" height="8" rx="3" fill="#dcebfa" stroke="#75908c" stroke-width="1"/>
+<line x1="705" y1="212.5" x2="705" y2="217.5" stroke="#4c6d63" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="737" y1="212.5" x2="737" y2="217.5" stroke="#4c6d63" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="693" y1="212.5" x2="693" y2="217.5" stroke="#4c6d63" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="751" y1="212.5" x2="751" y2="217.5" stroke="#4c6d63" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="713" y1="212.5" x2="713" y2="217.5" stroke="#4c6d63" stroke-width="1.5" stroke-linecap="round"/>
+<text x="772" y="219" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#4c6d63">AS:i:125 NM:i:5</text>
+<text x="646" y="235" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">mm10</text>
+<rect x="684" y="227" width="34" height="8" rx="3" fill="#7a99bd" stroke="#26443a" stroke-width="1.1"/>
+<rect x="726" y="227" width="34" height="8" rx="3" fill="#7a99bd" stroke="#26443a" stroke-width="1.1"/>
+<text x="772" y="235" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">AS:i:150 NM:i:0</text>
+<path d="M922,135 L939,154 L922,173" fill="none" stroke="#26443a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="961" y="80" width="194" height="26" rx="4" fill="url(#hatch)"/>
+<rect x="956" y="74" width="194" height="26" rx="4" fill="#f4f8fc" stroke="#26443a" stroke-width="1.8"/>
+<rect x="956" y="74" width="8" height="26" rx="2" fill="#4f7a6a" stroke="#26443a" stroke-width="1.8"/>
+<text x="972" y="91" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">dna00001.hg38.bam</text>
+<text x="1053" y="128" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="12.5" fill="#4c6d63" text-anchor="middle">ambiguous-alignments/</text>
+<rect x="961" y="142" width="194" height="26" rx="4" fill="url(#hatch)"/>
+<rect x="956" y="136" width="194" height="26" rx="4" fill="#f4f8fc" stroke="#26443a" stroke-width="1.8"/>
+<rect x="956" y="136" width="8" height="26" rx="2" fill="#c9a56a" stroke="#26443a" stroke-width="1.8"/>
+<text x="972" y="153" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">dna00001.A.ambiguous.bam</text>
+<rect x="961" y="173" width="194" height="26" rx="4" fill="url(#hatch)"/>
+<rect x="956" y="167" width="194" height="26" rx="4" fill="#f4f8fc" stroke="#26443a" stroke-width="1.8"/>
+<rect x="956" y="167" width="8" height="26" rx="2" fill="#c9a56a" stroke="#26443a" stroke-width="1.8"/>
+<text x="972" y="184" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">dna00001.B.ambiguous.bam</text>
+<rect x="961" y="214" width="194" height="26" rx="4" fill="url(#hatch)"/>
+<rect x="956" y="208" width="194" height="26" rx="4" fill="#f4f8fc" stroke="#26443a" stroke-width="1.8"/>
+<rect x="956" y="208" width="8" height="26" rx="2" fill="#7a99bd" stroke="#26443a" stroke-width="1.8"/>
+<text x="972" y="225" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#26443a">dna00001.mm10.bam</text>
+<g font-family="Georgia, 'Times New Roman', serif" fill="#26443a">
+<text x="96" y="150" font-size="60" letter-spacing="1">neodisambiguate</text>
+<path d="M102,186 Q325,178 548,184" fill="none" stroke="#26443a" stroke-width="1.6" stroke-linecap="round"/>
+<text x="325" y="216" text-anchor="middle" font-size="18" font-style="italic" fill="#4c6d63">Human or mouse? Let the alignments decide.</text>
+</g>
+<g font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="13.5" fill="#4c6d63">
+<text x="767" y="38" text-anchor="middle">every template on both references</text>
+<text x="1053" y="38" text-anchor="middle">one BAM per winner</text>
+</g>
+</svg>
