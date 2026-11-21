@@ -1,4 +1,6 @@
-# neodisambiguate
+![Banner for neodisambiguate](https://raw.githubusercontent.com/clintval/neodisambiguate/main/.github/img/neodisambiguate_banner.svg)
+
+---
 
 [![Install with bioconda](https://img.shields.io/badge/Install%20with-bioconda-brightgreen.svg)](http://bioconda.github.io/recipes/neodisambiguate/README.html)
 [![Anaconda Version](https://anaconda.org/bioconda/neodisambiguate/badges/version.svg)](http://bioconda.github.io/recipes/neodisambiguate/README.html)
@@ -8,8 +10,6 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/clintval/neodisambiguate/blob/master/LICENSE)
 
 Disambiguate reads that were mapped to multiple references.
-
-![Torres del Paine](.github/img/cover.jpg)
 
 Install with the Conda or Mamba package manager after setting your [Bioconda channels](https://bioconda.github.io/#usage):
 
